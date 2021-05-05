@@ -38,6 +38,7 @@ namespace SheduleEditor_Amina
         {
             number = dataGridEditor.Rows[e.RowIndex].Cells[e.ColumnIndex]
                 .Value.ToString();
+            Close();
         }
     }
 }

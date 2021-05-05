@@ -33,8 +33,6 @@ namespace SheduleEditor_Amina
         {
             Audiences s = new Audiences();
             s.ShowDialog();
-
-            s.Close();
             dataGridShedule.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = s.number;
             
         }
