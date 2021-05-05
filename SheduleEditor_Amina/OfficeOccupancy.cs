@@ -26,7 +26,11 @@ namespace SheduleEditor_Amina
             dataGridShedule.Rows.Add();
             dataGridShedule.Rows.Add();
 
-            
+            dataGridShedule.Rows[0].Cells[0].Value = "1";
+            dataGridShedule.Rows[1].Cells[0].Value = "2";
+            dataGridShedule.Rows[2].Cells[0].Value = "3";
+            dataGridShedule.Rows[3].Cells[0].Value = "4";
+            dataGridShedule.Rows[4].Cells[0].Value = "5";
         }
 
         private void dataGridShedule_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -34,7 +38,6 @@ namespace SheduleEditor_Amina
             Audiences s = new Audiences();
             s.ShowDialog();
             dataGridShedule.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = s.number;
-            
         }
     }
 }
